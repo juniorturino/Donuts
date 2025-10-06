@@ -1,4 +1,26 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHouseFloodWater, faUtensils, faTruck } from "@fortawesome/free-solid-svg-icons";
+
+
 const Work = () => {
+    const workInfoData = [
+        {
+            image: <FontAwesomeIcon icon={faHouseFloodWater} />,
+            title: "Feito como se fosse em casa",
+            text: "Todos nossos donuts são preparados com carinho e atenção aos detalhes, como se fossem feitos na cozinha da sua casa. Utilizamos receitas tradicionais e técnicas artesanais para criar donuts frescos e saborosos, que lembram os melhores momentos em família.",
+        },
+        {
+            image: <FontAwesomeIcon icon={faUtensils} />,
+            title: "Ingredientes selecionados",
+            text: "Escolhemos a dedo os melhores ingredientes para garantir que nossos donuts sejam sempre frescos e deliciosos. Usamos apenas produtos de alta qualidade, desde a farinha até os recheios, para proporcionar a você uma experiência gustativa excepcional.",
+        },
+        {
+            image: <FontAwesomeIcon icon={faTruck} />,
+            title: "Entrega em toda cidade",
+            text: "Levamos nossos donuts diretamente até você, em qualquer lugar da cidade. Nossa equipe de entregas garante que seu pedido chegue rápido e em perfeitras condições, para que você possa desfrutar de nossos donuts fresquinhos e saborosos onde quer que você esteja.",
+        },
+    ];
+
     return (
     <div className="work-section-wrapper">
         <div className="work-section-top">
@@ -9,9 +31,17 @@ const Work = () => {
             </p>
         </div>
 
-        <div className="work-section-bottom"></div>  
+        <div className="work-section-bottom">
+            {workInfoData.map((data) => (
+                <div className="work-section-info" key={data.title}>
+                    <div className="info-boxes-img-container">{data.image}</div>
+                    <h2>{data.title}</h2>
+                    <p>{data.text}</p>
+        </div>
+            ))}
+        </div>
     </div>
-    )
+    );
 };
 
 export default Work;
