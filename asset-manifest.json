@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/Donuts/static/css/main.939933e2.css",
+    "main.js": "/Donuts/static/js/main.4445fa07.js",
+    "static/media/about-image.png": "/Donuts/static/media/about-image.fe0fd0ae464bd86f9dd0.png",
+    "static/media/about-background1.jpg": "/Donuts/static/media/about-background1.6bbcd6b4196f579a92a0.jpg",
+    "static/media/Logo.svg": "/Donuts/static/media/Logo.74c03f722ff8a4e46a2aacb2fb933d77.svg",
+    "static/media/home-banner-image.png": "/Donuts/static/media/home-banner-image.9f99148990aab45f07bd.png",
+    "static/media/home-banner-background.png": "/Donuts/static/media/home-banner-background.68a263794b2f8535d44a.png",
+    "index.html": "/Donuts/index.html",
+    "main.939933e2.css.map": "/Donuts/static/css/main.939933e2.css.map",
+    "main.4445fa07.js.map": "/Donuts/static/js/main.4445fa07.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.939933e2.css",
+    "static/js/main.4445fa07.js"
+  ]
+}
