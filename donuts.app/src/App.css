@@ -94,15 +94,13 @@ nav {
 }
 
 .home-image-section {
-    flex: 1;
     display: flex;
+    width: 50%;
 }
 
 .home-primary-image img {
-    width: 750px;
-    height: 640px;
-    object-fit: cover;
-    margin-left: 170px;
+    width: 100%;
+    height: 100%;
 }
 
 .primary-heading {
@@ -387,7 +385,7 @@ nav {
 
 
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 100px) {
     .navbar-links-container a {
         margin-right: 1rem;
         font-size: 1rem;
@@ -398,9 +396,13 @@ nav {
     .home-bannerImage-container {
         max-width: 600px;
     }
+
+    .about-background-image-container {
+        display: none;
+    }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 834px) {
     /*Navbar Component*/
     .nav-logo-container {
         max-width: 100px;
